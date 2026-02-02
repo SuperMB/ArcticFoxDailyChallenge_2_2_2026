@@ -1,0 +1,164 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticfox ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticfox "
+        }
+    ],
+    "243905371411077927": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('dog_analysis.py') ",
+            "Existing": "arcticfox.projectpath('dog_analysis.py') "
+        }
+    ],
+    "013905371411077927": [
+        {
+            "PreviouslyGenerated": "dog_speedsDf = pd.read_csv('dog_speeds.csv') ",
+            "Existing": "dog_speedsDf = pd.read_csv('dog_speeds.csv') "
+        }
+    ],
+    "243905728059457927": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905728059457927": [
+        {
+            "PreviouslyGenerated": "print(dog_speedsDf.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(dog_speedsDf.astype(str).fillna('').head()) #)1 "
+        }
+    ],
+    "013905411652657927": [
+        {
+            "PreviouslyGenerated": "#***CreateRanges: Categorize rows into custom ranges, can create a group number and / or a group label\n#***\n#***Specifying the range column and ranges is required, select the selection below to add these options\n#***- Add required range column and ranges options #> `select ? --rangeColumn ? --ranges ? --guideStep Step2",
+            "Existing": "#***CreateRanges: Categorize rows into custom ranges, can create a group number and / or a group label\n#***\n#***Specifying the range column and ranges is required, select the selection below to add these options\n#***- Add required range column and ranges options #> `select ? --rangeColumn ? --ranges ? --guideStep Step2"
+        },
+        {
+            "PreviouslyGenerated": "#***You must select one of the following.\n#***Which of the following columns would you also like to specify?\n#***- Both group label column name and group number column name #> `select --groupLabelColumn ? --groupNumberColumn ? --guideStep <x>\n#***- Only group label column name #> `select --groupLabelColumn ? --guideStep <x>\n#***- Only group number column name #> `select --groupNumberColumn ? --guideStep <x>\n#***\n#***\n#****** --rangeColumn ? ***\n#***Column that determines what range the row fits in\n#***- Example: --rangeColumn Age\n#***\n#****** --ranges ? ***\n#***A list of ranges that define the end points of each desired range. Less than the lowest number and greater than the highest number ranges are also created\n#***- Example: --ranges 10 20 30 40 50 ",
+            "Existing": "#***You must select one of the following.\n#***Which of the following columns would you also like to specify?\n#***- Both group label column name and group number column name #> `select --groupLabelColumn ? --groupNumberColumn ? --guideStep <x>\n#***- Only group label column name #> `select --groupLabelColumn ? --guideStep <x>\n#***- Only group number column name #> `select --groupNumberColumn ? --guideStep <x>\n#***\n#***\n#****** --rangeColumn ? ***\n#***Column that determines what range the row fits in\n#***- Example: --rangeColumn Age\n#***\n#****** --ranges ? ***\n#***A list of ranges that define the end points of each desired range. Less than the lowest number and greater than the highest number ranges are also created\n#***- Example: --ranges 10 20 30 40 50 "
+        },
+        {
+            "PreviouslyGenerated": "#****** --rangeColumn ? ***\n#***Column that determines what range the row fits in\n#***- Example: --rangeColumn Age\n#***\n#****** --ranges ? ***\n#***A list of ranges that define the end points of each desired range. Less than the lowest number and greater than the highest number ranges are also created\n#***- Example: --ranges 10 20 30 40 50\n#***\n#****** --groupLabelColumn ? ***\n#***The name of the column to store the resulting group LABEL in\n#***- Example: --groupLabelColumn Patient_AgeGroup_Label\n#***\n#****** --groupNumberColumn ? ***\n#***The name of the column to store the resulting group NUMBER in\n#***- Example: --groupNumberColumn agegrp ",
+            "Existing": "#****** --rangeColumn ? ***\n#***Column that determines what range the row fits in\n#***- Example: --rangeColumn Age\n#***\n#****** --ranges ? ***\n#***A list of ranges that define the end points of each desired range. Less than the lowest number and greater than the highest number ranges are also created\n#***- Example: --ranges 10 20 30 40 50\n#***\n#****** --groupLabelColumn ? ***\n#***The name of the column to store the resulting group LABEL in\n#***- Example: --groupLabelColumn Patient_AgeGroup_Label\n#***\n#****** --groupNumberColumn ? ***\n#***The name of the column to store the resulting group NUMBER in\n#***- Example: --groupNumberColumn agegrp "
+        },
+        {
+            "PreviouslyGenerated": "for index, row in dog_speedsDfCopy.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 1:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '<1'\n    elif 1 <= ageVariable <= 4:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '1-4'\n    elif 4 <= ageVariable <= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '4-7'\n    elif 7 <= ageVariable <= 10:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '7-10'\n    elif 10 <= ageVariable <= 12:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '10-12'\n    elif ageVariable >= 12:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '>=12' ",
+            "Existing": "for index, row in dog_speedsDfCopy.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 1:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '<1'\n    elif 1 <= ageVariable <= 4:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '1-4'\n    elif 4 <= ageVariable <= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '4-7'\n    elif 7 <= ageVariable <= 10:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '7-10'\n    elif 10 <= ageVariable <= 12:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '10-12'\n    elif ageVariable >= 12:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '>=12' "
+        },
+        {
+            "PreviouslyGenerated": "for index, row in dog_speedsDf.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 1:\n        dog_speedsDf.loc[index, 'DogAge'] = '<1'\n    elif 1 <= ageVariable <= 4:\n        dog_speedsDf.loc[index, 'DogAge'] = '1-4'\n    elif 4 <= ageVariable <= 7:\n        dog_speedsDf.loc[index, 'DogAge'] = '4-7'\n    elif 7 <= ageVariable <= 10:\n        dog_speedsDf.loc[index, 'DogAge'] = '7-10'\n    elif 10 <= ageVariable <= 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '10-12'\n    elif ageVariable >= 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '>=12' ",
+            "Existing": "for index, row in dog_speedsDf.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 1:\n        dog_speedsDf.loc[index, 'DogAge'] = '<1'\n    elif 1 <= ageVariable <= 4:\n        dog_speedsDf.loc[index, 'DogAge'] = '1-4'\n    elif 4 <= ageVariable <= 7:\n        dog_speedsDf.loc[index, 'DogAge'] = '4-7'\n    elif 7 <= ageVariable <= 10:\n        dog_speedsDf.loc[index, 'DogAge'] = '7-10'\n    elif 10 <= ageVariable <= 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '10-12'\n    elif ageVariable >= 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '>=12' "
+        },
+        {
+            "PreviouslyGenerated": "for index, row in dog_speedsDf.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 1:\n        dog_speedsDf.loc[index, 'DogAge'] = '<1'\n    elif 1 <= ageVariable < 4:\n        dog_speedsDf.loc[index, 'DogAge'] = '1-4'\n    elif 4 <= ageVariable < 7:\n        dog_speedsDf.loc[index, 'DogAge'] = '4-7'\n    elif 7 <= ageVariable < 10:\n        dog_speedsDf.loc[index, 'DogAge'] = '7-10'\n    elif 10 <= ageVariable < 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '10-12'\n    elif ageVariable >= 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '>=12' ",
+            "Existing": "for index, row in dog_speedsDf.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 1:\n        dog_speedsDf.loc[index, 'DogAge'] = '<1'\n    elif 1 <= ageVariable < 4:\n        dog_speedsDf.loc[index, 'DogAge'] = '1-4'\n    elif 4 <= ageVariable < 7:\n        dog_speedsDf.loc[index, 'DogAge'] = '4-7'\n    elif 7 <= ageVariable < 10:\n        dog_speedsDf.loc[index, 'DogAge'] = '7-10'\n    elif 10 <= ageVariable < 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '10-12'\n    elif ageVariable >= 12:\n        dog_speedsDf.loc[index, 'DogAge'] = '>=12' "
+        }
+    ],
+    "243905344441007927": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.analysis_needed(10001) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.analysis_needed(10001) "
+        },
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905344441007927": [
+        {
+            "PreviouslyGenerated": "print(dog_speedsDf.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(dog_speedsDf.astype(str).fillna('').head()) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(dog_speedsDfPivot.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(dog_speedsDfPivot.astype(str).fillna('').head()) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(dog_speedsDfCopyPivot.astype(str).fillna('').head(n=30)) #)1 ",
+            "Existing": "print(dog_speedsDfCopyPivot.astype(str).fillna('').head(n=30)) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(dog_speedsDfPivot.astype(str).fillna('').head(n=30)) #)1 ",
+            "Existing": "print(dog_speedsDfPivot.astype(str).fillna('').head(n=30)) #)1 "
+        }
+    ],
+    "013905520124717927": [
+        {
+            "PreviouslyGenerated": "#***DataframePivot: Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.\n#***\n#***What would you like to do?\n#***- Pivot the dataframe such that the result has NO columns.\n#***---- This will combine a column of data into cells\n#***---- according to the categories of another column. #> `select ? --rows ?\n#***\n#***- Pivot the dataframe such that the result has columns.\n#***---- This will combine data across more dimensions. #> `select ? --rows ? --columns ?",
+            "Existing": "#***DataframePivot: Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.\n#***\n#***What would you like to do?\n#***- Pivot the dataframe such that the result has NO columns.\n#***---- This will combine a column of data into cells\n#***---- according to the categories of another column. #> `select ? --rows ?\n#***\n#***- Pivot the dataframe such that the result has columns.\n#***---- This will combine data across more dimensions. #> `select ? --rows ? --columns ?"
+        },
+        {
+            "PreviouslyGenerated": "#***What aggregation function would you like to use? If none supplied, sum will be used.\n#***- Sum #> `select --cells ? --sum\n#***- Mean #> `select --cells ? --mean\n#***- Median #> `select --cells ? --median\n#***- Min #> `select --cells ? --min\n#***- Max #> `select --cells ? --max\n#***- Count #> `select --count\n#***- Standard Deviation #> `select --cells ? --std\n#***- Variance #> `select --cells ? --var\n#***- First #> `select --cells ? --first\n#***- Last #> `select --cells ? --last\n#***- Done #> `select\n#***\n#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time ",
+            "Existing": "#***What aggregation function would you like to use? If none supplied, sum will be used.\n#***- Sum #> `select --cells ? --sum\n#***- Mean #> `select --cells ? --mean\n#***- Median #> `select --cells ? --median\n#***- Min #> `select --cells ? --min\n#***- Max #> `select --cells ? --max\n#***- Count #> `select --count\n#***- Standard Deviation #> `select --cells ? --std\n#***- Variance #> `select --cells ? --var\n#***- First #> `select --cells ? --first\n#***- Last #> `select --cells ? --last\n#***- Done #> `select\n#***\n#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time "
+        },
+        {
+            "PreviouslyGenerated": "#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time ",
+            "Existing": "#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time "
+        },
+        {
+            "PreviouslyGenerated": "dog_speedsDfCopyPivot = dog_speedsDfCopy.pivot_table(index='breed', columns='DogAge', aggfunc='size', fill_value=0)\ndog_speedsDfCopyPivot.columns.name = None\ndog_speedsDfCopyPivot = dog_speedsDfCopyPivot.reset_index(drop=False) ",
+            "Existing": "dog_speedsDfCopyPivot = dog_speedsDfCopy.pivot_table(index='breed', columns='DogAge', aggfunc='size', fill_value=0)\ndog_speedsDfCopyPivot.columns.name = None\ndog_speedsDfCopyPivot = dog_speedsDfCopyPivot.reset_index(drop=False) "
+        },
+        {
+            "PreviouslyGenerated": "dog_speedsDfPivot = dog_speedsDf.pivot_table(index='breed', columns='DogAge', aggfunc='size', fill_value=0)\ndog_speedsDfPivot.columns.name = None\ndog_speedsDfPivot = dog_speedsDfPivot.reset_index(drop=False) ",
+            "Existing": "dog_speedsDfPivot = dog_speedsDf.pivot_table(index='breed', columns='DogAge', aggfunc='size', fill_value=0)\ndog_speedsDfPivot.columns.name = None\ndog_speedsDfPivot = dog_speedsDfPivot.reset_index(drop=False) "
+        }
+    ],
+    "013905292605647927": [
+        {
+            "PreviouslyGenerated": "#***Focus: Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.\n#***\n#***Please select which variable to make the Focus:\n#***- dog_speedsDf #> `select dog_speedsDf\n#***- ageVariable #> `select ageVariable\n#***- dog_speedsDf.loc #> `select dog_speedsDf.loc\n#***- dog_speedsDfPivot #> `select dog_speedsDfPivot\n#***- dog_speedsDfPivot.columns.name #> `select dog_speedsDfPivot.columns.name",
+            "Existing": "#***Focus: Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.\n#***\n#***Please select which variable to make the Focus:\n#***- dog_speedsDf #> `select dog_speedsDf\n#***- ageVariable #> `select ageVariable\n#***- dog_speedsDf.loc #> `select dog_speedsDf.loc\n#***- dog_speedsDfPivot #> `select dog_speedsDfPivot\n#***- dog_speedsDfPivot.columns.name #> `select dog_speedsDfPivot.columns.name"
+        },
+        {
+            "PreviouslyGenerated": "# Setting focus to dog_speedsDf ",
+            "Existing": "# Setting focus to dog_speedsDf "
+        },
+        {
+            "PreviouslyGenerated": "# Setting focus to dog_speedsDfCopy ",
+            "Existing": "# Setting focus to dog_speedsDfCopy "
+        }
+    ],
+    "013905938141117927": [
+        {
+            "PreviouslyGenerated": "#***DataframeCopy: Creates a new variable that is a copy of the target dataframe. This is usefule for doing operations that modify a dataset while maintaining an unmodified version of the original dataframe.\n#***\n#***DataframeCopy copies the most recent / focused dataframe. No options are needed.\n#***Delete ? to write code.\n#***\n#***Example:\n#***#> DataframeCopy\n#***\n#***- Done? #> `select",
+            "Existing": "#***DataframeCopy: Creates a new variable that is a copy of the target dataframe. This is usefule for doing operations that modify a dataset while maintaining an unmodified version of the original dataframe.\n#***\n#***DataframeCopy copies the most recent / focused dataframe. No options are needed.\n#***Delete ? to write code.\n#***\n#***Example:\n#***#> DataframeCopy\n#***\n#***- Done? #> `select"
+        },
+        {
+            "PreviouslyGenerated": "dog_speedsDfCopy = dog_speedsDf.copy() ",
+            "Existing": "dog_speedsDfCopy = dog_speedsDf.copy() "
+        }
+    ],
+    "013905839781227927": [
+        {
+            "PreviouslyGenerated": "# Setting focus to dog_speedsDf ",
+            "Existing": "# Setting focus to dog_speedsDf "
+        }
+    ],
+    "013905363713447927": [
+        {
+            "PreviouslyGenerated": "for index, row in dog_speedsDfCopy.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 4:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '<4'\n    elif 4 <= ageVariable <= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '4-7'\n    elif ageVariable >= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '>=7' ",
+            "Existing": "for index, row in dog_speedsDfCopy.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 4:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '<4'\n    elif 4 <= ageVariable <= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '4-7'\n    elif ageVariable >= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '>=7' "
+        },
+        {
+            "PreviouslyGenerated": "for index, row in dog_speedsDfCopy.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 4:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '<4'\n    elif 4 <= ageVariable < 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '4-7'\n    elif ageVariable >= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '>=7' ",
+            "Existing": "for index, row in dog_speedsDfCopy.iterrows():\n    ageVariable = row['age']\n    if ageVariable < 4:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '<4'\n    elif 4 <= ageVariable < 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '4-7'\n    elif ageVariable >= 7:\n        dog_speedsDfCopy.loc[index, 'DogAge'] = '>=7' "
+        }
+    ],
+    "013905612621907927": [
+        {
+            "PreviouslyGenerated": "dog_speedsDfCopyPivot = dog_speedsDfCopy.pivot_table(index='breed', columns='DogAge', aggfunc='size', fill_value=0)\ndog_speedsDfCopyPivot.columns.name = None\ndog_speedsDfCopyPivot = dog_speedsDfCopyPivot.reset_index(drop=False) ",
+            "Existing": "dog_speedsDfCopyPivot = dog_speedsDfCopy.pivot_table(index='breed', columns='DogAge', aggfunc='size', fill_value=0)\ndog_speedsDfCopyPivot.columns.name = None\ndog_speedsDfCopyPivot = dog_speedsDfCopyPivot.reset_index(drop=False) "
+        }
+    ],
+    "013905393372007927": [
+        {
+            "PreviouslyGenerated": "print(dog_speedsDfCopyPivot.astype(str).fillna('').head()) #)3 ",
+            "Existing": "print(dog_speedsDfCopyPivot.astype(str).fillna('').head()) #)3 "
+        },
+        {
+            "PreviouslyGenerated": "print(dog_speedsDfCopyPivot.astype(str).fillna('').head(n=10)) #)3 ",
+            "Existing": "print(dog_speedsDfCopyPivot.astype(str).fillna('').head(n=10)) #)3 "
+        }
+    ]
+}

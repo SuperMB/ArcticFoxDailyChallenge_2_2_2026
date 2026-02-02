@@ -1,0 +1,118 @@
+{
+    "variables": {
+        "dog_speedsDf": {
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "DogAge",
+                    "ColumnType": 0
+                }
+            ],
+            "hasHeaders": false,
+            "type": "pandas.core.frame.DataFrame"
+        },
+        "index": {
+            "type": "int"
+        },
+        "row": {
+            "type": "pandas.core.series.Series"
+        },
+        "ageVariable": {
+            "type": "int"
+        },
+        "dog_speedsDfPivot": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "1-4",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "10-12",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "4-7",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "7-10",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "<1",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": ">=12",
+                    "ColumnType": 1
+                }
+            ]
+        },
+        "dog_speedsDfCopy": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "top_speed_mph",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "DogAge",
+                    "ColumnType": 0
+                }
+            ]
+        },
+        "dog_speedsDfCopyPivot": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "breed",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "4-7",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "<4",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": ">=7",
+                    "ColumnType": 1
+                }
+            ]
+        }
+    }
+}
